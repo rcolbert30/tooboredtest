@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+     <style>
+		 @import url('https://use.typekit.net/ijf1bim.css');
+
+        body {
+            background-image: url("Images/contact_background.png");
+			background-size: cover;
+            color: white;
+            font-family: "futura-pt-bold", san-serif;
+			font-weight: 200;
+			font-size: 19px;
+			font-style: italic;
+			color: white;
+			padding: 0px 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .contact-box {
+            background-color: black;
+            border: 10px solid red;
+            padding: 30px;
+            width: 70%;
+            text-align: center;
+        }
+        input[type="text"], select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid white;
+            background-color: black;
+            color: white;
+        }
+        input[type="checkbox"] {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-box">
+        <form class="" action="send.php" method="post">
+            <label for="club">Collection:</label>
+            <select id="club" name="club">
+                <option value="Bored Ape" selected>Bored Ape Yacht Club</option>
+                <option value="mutant-ape" disabled>Mutant Ape Yacht Club</option>
+                <option value="kennel-ape" disabled>Bored Ape Kennel Club</option>
+            </select>
+            
+            <br>
+            
+            <label for="ape-number">Token Number:</label>
+            <input type="text" id="ape-number" name="ape-number" required>
+            
+            <br>
+            
+            <label for="owner-name">Owner Name/Alias:</label>
+            <input type="text" id="owner-name" name="owner-name" required>
+            
+            <br>
+            
+            <label for="character-name">Desired Character Name:</label>
+            <input type="text" id="character-name" name="character-name" required>
+            
+            <br>
+            
+            <label for="email">Email Address:</label>
+            <input type="text" id="email" name="email" required>
+            
+            <br>
+            
+            <label for="x">Twitter Handle:</label>
+            <input type="text" id="x" name="x" required>
+            
+            <br>
+            
+            <label for="character-description">Character Description:</label>
+            <textarea id="character-description" name="character-description" rows="6" required></textarea>
+            
+            <br>
+            
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">By checking this box, you acknowledge you have read and agree to the Casting Call Terms and Conditions and that Apetoon Studios may email you regarding the Too Bored show.</label>
+            
+            <br>
+            
+            <input type="submit" name="send" value="Submit">
+        </form>
+         	<br>
+		    <br>
+        <a href="https://twitter.com/ApetoonStudios?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow Us on Twitter</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div>
+</body>
+</html>
