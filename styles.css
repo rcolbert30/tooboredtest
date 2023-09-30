@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+video {
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+ /* retro button */
+html {
+  width: 100%;
+  height: 100%;
+  font-size: 160%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  transform: rotate(-5deg);
+  display: block;
+  position: relative;
+  padding: 1.2em 2em;
+  font-family: helvetica neue, helvetica, sans-serif;
+  font-size: 0.75em;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: black;
+  background: green;
+  border: 0;
+  border-radius: 0.2em;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+button:hover {
+  color: black;
+}
+button:after {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0.5em;
+  left: 0.5em;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 0.2em solid black;
+  border-radius: 0.2em;
+  transition: all 0.15s ease-out;
+}
+button:hover:after {
+  top: 0;
+  left: 0;
+}

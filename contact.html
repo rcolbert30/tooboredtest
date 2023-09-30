@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>main</title>
+<link rel="stylesheet" href="main.css">	
+</head>
+
+<body>
+<div class="background-image"></div>
+	<header>
+		<img class="logo" src="Images/Ape_Toon_Studios_MoizAnimation (1).png" alt="logo">
+		<nav>
+			<ul class="nav_links">
+				<li><a href="ape_page.html"> Home</a></li>
+				<li><a href="#"> Shop</a></li>
+				<li><a href="#"> Projects</a></li>
+				<li><a href="#"> About</a></li>
+			</ul>
+		</nav>
+		<a class="cta" href="contact.html"><button>Contact</button></a>
+	</header>
+	 
+
+
+<div class="contact-box">
+
+  <form action="submit_form.php" method="post">
+    <label for="club">Select Club:</label>
+    <select id="club" name="club">
+      <option value="bored_ape" selected>Bored Ape Yacht Club</option>
+      <option value="mutant_ape" disabled>Mutant Ape Yacht Club</option>
+      <option value="kennel_club" disabled>Bored Ape Kennel Club</option>
+    </select><br><br>
+    
+    <label for="ape_number">Ape Number:</label>
+    <input type="text" id="ape_number" name="ape_number"><br><br>
+    
+    <label for="owner_name">Owner Name/Alias:</label>
+    <input type="text" id="owner_name" name="owner_name"><br><br>
+    
+    <label for="desired_name">Desired Character Name:</label>
+    <input type="text" id="desired_name" name="desired_name"><br><br>
+    
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email"><br><br>
+    
+    <label for="twitter">Twitter Handle:</label>
+    <input type="text" id="twitter" name="twitter"><br><br>
+	  
+	 <a href="https://twitter.com/TwitterDev?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @TwitterDev</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> <br><br>
+    
+    <label for="description">Character Description:</label><br>
+    <textarea id="description" name="description" rows="4" cols="50"></textarea><br><br>
+    
+    <label>
+      <input type="checkbox" name="terms" required>
+      By checking this box, you acknowledge you have read and agree to the Casting Call Terms and Conditions and that Apetoon Studios may email you regarding the Too Bored show.
+    </label><br><br>
+    
+    <input type="submit" value="Submit">
+  </form>
+</div>
+
+	<script src="script.js"></script>
+</body>
+</html>
