@@ -23,7 +23,7 @@ body, html {
  
 }
 
-li, a, button, nav {
+h1, li, a, button, nav {
 	font-family: "futura-pt-bold", san-serif;
 	font-weight: 200;
 	font-size: 30px;
